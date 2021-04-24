@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .formm {
+            align-items: center;
+
+
+        }
+
+        .bang {
+
+            width: 600px;
+            height: auto;
+            border-collapse: collapse;
+            text-align: left;
+            background-color: silver;
+
+        }
+
+        .tieude {
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: red;
+            font-weight: bold;
+        }
+
+        .aaa {
+            width: 600px;
+            height: auto;
+        }
+        #swap{
+            margin: 0px auto;
+            width: 800px;
+            height: 500px;
+        }
+        #home{
+    width: 70px;
+    height: 20px;
+    background-color:royalblue;
+    border-radius: 10px 10px ;
+  
+}
+
+#home a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 10px;
+}
+    </style>
+</head>
+
+
+<body>
+    <div><a href="dangnhap.html"> Dang Nhap </a></div>
+    <div id="home"><a href="index.html">HOME</a></div>
+    <h4> Nguyễn Quốc Trong B1809534 chiều thứ 2 nhóm 1</h4>
+    <!--Tao form dang ki tai khoan moi -->
+    <div id="swap">
+    <form action="xuli_dangki.php" class="formm" name="frmdangki" id="frmdangki" method="POST" enctype="multipart/form-data" >
+        
+        <input type="hidden" name="token" value="AaBbCc1106" />
+        <fieldset class="aaa" style="text-align: center;"> <span class="tieude"> Đăng kí tài khoản mới </span>
+
+            <table class="bang">
+                <!--dong 1-->
+                <tr>
+                    <td><label>Tên đăng nhập</label></td>
+                    <td>
+                        <input name="dnten" id="dnten" type="text" />
+                    </td>
+                </tr>
+                <!--dong 2-->
+                <tr>
+                    <td><label>Mật Khẩu</label></td>
+                    <td><input name="pass" id="pass" type="password" /></td>
+                </tr>
+                <!--dong 3-->
+                <tr>
+                    <td><label>Gõ lại password </label></td>
+                    <td>
+                        <input name="pass" id="pass" type="password" />
+                    </td>
+                </tr>
+                <!--dong 4-->
+                <tr>
+                    <td><label>Hình đại diện</label></td>
+                    <td><input name="fileanh" id="fieanh" type="file" /></td>
+                </tr>
+                <!--dong 5-->
+                <tr>
+                    <td><label>Giới Tính</label></td>
+                    <td>
+                        <input type="radio" name="gender" id="gendermale1" value="Nam" /><label>Nam</label>
+                        <input type="radio" name="gender" id="genderfemale2" value="Nữ" /><label>Nu</label>
+                        <input type="radio" name="gender" id="genderother3" value="Khác" /><label>Khac</label>
+
+                    </td>
+                </tr>
+                <!--dong 6-->
+
+                <tr>
+                    <td><label>Nghề Nghiệp</label></td>
+                    <td>
+                        <select name="carea">
+                            <option value="Sinh vien">Sinh viên</option>
+                            <option value="Bac Si">Bác Sĩ</option>
+                            <option value="Giao vien">Giáo viên</option>
+                            <option value="Khac">Khác</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <!--dong 7-->
+                <tr>
+                    <td><label>Sở thích</label></td>
+                    <td>
+                        <lable><input type="checkbox" name="job[]" id="job_1" value="The Thao" /> Thể thao</lable>
+                        <lable><input type="checkbox" name="job[]" id="job_1" value="Du lich" />Du lịch</lable>
+                        <lable><input type="checkbox" name="job[]" id="job_1" value="Am nhac" />Âm nhạc</lable>
+                        <lable><input type="checkbox" name="job[]" id="job_1" value="Thoi Trang" />Thời trang</lable>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" name="dangki" id="dangki" value="Đăng kí" />
+                        <input type="reset" name="rs" id="rs" value="Làm lại" />
+                    </td>
+
+                </tr>
+            </table>
+        </fieldset>
+
+    </form>
+ 
+</div>
+</body>
+
+</html>

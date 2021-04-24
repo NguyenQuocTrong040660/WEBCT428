@@ -1,0 +1,161 @@
+#wrap{
+ 
+    width:1000px;
+    height: auto ;
+    margin: 0px auto;
+    padding: 5px ;
+    background-color:#77BFC7;
+   
+}
+
+body{
+    background-color: #EBF4FA;
+}
+#title{
+    /* background-image: url('/assets/Slider-Background\ it.jpg'); */
+    width: 1000px;
+    height: 250px;
+    float: left;
+    /* border-radius:19px 19px; */
+}
+
+
+ 
+
+#content{
+  
+    float: left;
+    font-size: 18px;
+    margin-top: 100px;
+    margin-left: 10px;
+   
+   
+    
+    
+}
+.dangnhap{
+    background-color: blue;
+    text-align: center;
+    width: 100px;
+    float: left;
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+}
+
+#footer{
+    clear: both;
+    background-color:#1c1427 ;
+    margin-bottom: 0px;
+}
+#footer{
+    color: white;
+}
+
+
+.menucap2 li {
+    display: none;
+    background-color: yellow;
+    /* border-radius:10px 10px; */
+}
+#menu a{
+    text-decoration: none;
+    color: whitesmoke;
+  
+
+}
+#menu>li{
+    list-style-type: none;
+    padding-left: 0px;
+    margin-left: 0px;
+
+
+}
+
+
+
+.menucap1>li{
+    display: inline-block;
+    width: 198px;
+    height: 30px;
+    float: left;
+    background-color:#1c1427;
+     /* border: 1px dotted orange; */
+     /* border-radius:10px 10px; */
+  
+  
+}
+.menucap1 li a{
+    line-height: 30px;
+    display: block;/*cho noi dung a = voi li*/
+    text-align: center;
+  
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+  
+    
+}
+.menucap1 li:hover .menucap2 li{
+    display: block;
+  
+}
+.menucap2 li { 
+  margin:0px;
+  width: 198px;
+  height: 30px;
+  background-color: #1c1427;
+  padding: 0px;
+  /* border: 1px dotted orange; */
+ 
+
+}
+.menucap2{
+
+    margin: 0px;
+    padding-left: 0px;
+    position: absolute;
+    float: left;
+}
+.menucap2 a{
+    padding-left: 0px;
+    margin-left: 0px;
+}
+.menucap2 li:hover {
+    background-color: #000000 ;
+}
+.menucap1 li:hover{
+    background-color: gray;
+}
+ #content h4{
+   font-size: 20px;
+   color: orangered;
+   border: 1px ;
+ }
+ *{
+     margin: 0px;
+     padding: 0px;
+ }
+ #content li{
+     margin-left: 25px;
+ }
+#content p {
+  padding: 5px;
+  font-weight: bold;
+}
+
+#footer{
+    width: 990px;
+    clear: both;
+    border-top: 2px dotted black;
+    text-align: center;
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/**dinh dang shaddow font family*/
+
+
+

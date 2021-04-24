@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title> Bài tập 3 - Buổi 2 </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="stylebai3.css" media="screen" />
+</head>	
+<style>
+    form {
+        width: 500px;
+        height: auto;
+       background-color: lightblue;
+       margin:0px 250px;
+    }
+
+    input {
+        width: 50%;
+        height: 20px;
+    }
+
+    table {
+
+        width: 100%;
+        height: 400px;
+    }
+
+    .themsp {
+        text-align: center;
+        font-weight: bold;
+        color: blue;
+        font-size: 25px;
+        margin: 0px auto;
+    }
+
+    button {
+        background-color: blue;
+        color: white;
+        width: 20%;
+    }
+    #footer{
+        bottom: 0px;
+        background-color: black;
+        position: absolute;
+    }
+    </style>
+<body>
+<div id="wrap">
+	<div id="title">
+	
+	</div> <!--end div title-->
+	
+	<div id="content">
+        <form name="themsp" method="POST" action="xuli_themsp.php" enctype="multipart/form-data">
+            <fieldset>
+                <div class="themsp"> THEM SAN PHAM</div>
+                <table>
+                    <tr>
+                        <th> Ten san pham:</th>
+                        <td>
+                            <input type="text" name="tensp" id="tensp" required />
+                        </td>
+    
+                    </tr>
+                    <tr>
+                        <th> Chi tiet san pham:</th>
+                        <td>
+                            <textarea rows="5" cols="35" name="ctsp" placeholder="Vui long nhap chi tiet san phan"
+                                required></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th> Gia ban:</th>
+                        <td>
+                            <input type="text" name="giasp" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Hinh anh:</th>
+                        <td>
+                            <input type="file" name="anhsp" id="fileanh" required />
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit" value="ADD" align="center" name="themsp"> ADD </button>
+                            <button type="reset" value="reset">RESET</button>
+                        </td>
+                    </tr>
+    
+    
+    
+    
+                </table>
+            </fieldset>
+        </form>
+     
+	</div> <!--end div content-->
+	<div id="footer">
+		<p>Liên hệ</p>
+	</div> <!--end div footer-->
+</div> <!--end div wrap-->
+</body>
+</html>
